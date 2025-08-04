@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avsallar Veteriner Kliniği</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Avsallar Veteriner Kliniği</div>
+    <nav>
+      <ul class="language-switcher">
+        <li><button onclick="changeLanguage('tr')">Türkçe</button></li>
+        <li><button onclick="changeLanguage('en')">English</button></li>
+        <li><button onclick="changeLanguage('de')">Deutsch</button></li>
+        <li><button onclick="changeLanguage('ru')">Русский</button></li>
+      </ul>
+    </nav>
+    <div class="cta-buttons">
+      <a href="tel:1724" class="btn">1724 Acil Çağrı</a>
+      <a href="https://wa.me/905xxxxxxxxx" target="_blank" class="btn whatsapp">WhatsApp</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 id="hero-title">Sevimli Dostlarınız İçin Güvenilir Eller</h1>
+    <p id="hero-subtitle">Hayvanlarınız için uzman veterinerlik hizmetleri</p>
+    <a href="#hizmetler" class="btn primary">Hizmetlerimizi Gör</a>
+  </section>
+
+  <section id="hizmetler" class="services">
+    <ul>
+      <li>Muayene</li>
+      <li>Aşı</li>
+      <li>Cerrahi</li>
+      <li>Diş Bakımı</li>
+      <li class="dropdown">Laboratuvar
+        <ul class="dropdown-menu">
+          <li>Kan Tahlili</li>
+          <li>Röntgen</li>
+          <li>Biyokimya</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class="team-slider">
+    <h2>Ekibimiz</h2>
+    <div class="slider">
+      <div class="slide"><img src="https://via.placeholder.com/150" alt="Dr. Ahmet Yılmaz" /><p>Dr. Ahmet Yılmaz</p></div>
+      <div class="slide"><img src="https://via.placeholder.com/150" alt="Dr. Ayşe Demir" /><p>Dr. Ayşe Demir</p></div>
+      <div class="slide"><img src="https://via.placeholder.com/150" alt="Dr. Mehmet Kaya" /><p>Dr. Mehmet Kaya</p></div>
+    </div>
+    <button onclick="prevSlide()">&#10094;</button>
+    <button onclick="nextSlide()">&#10095;</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Avsallar Veteriner Kliniği</p>
+    <div class="social">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube" /></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
