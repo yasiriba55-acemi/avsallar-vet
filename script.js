@@ -1,0 +1,102 @@
+const translations = {
+  tr: {
+    menu_home: "Ana Sayfa",
+    menu_services: "Hizmetler",
+    menu_team: "Ekibimiz",
+    menu_blog: "Blog",
+    menu_contact: "İletişim",
+    hero_title: "Sevimli Dostlarınız İçin Güvenilir Eller",
+    hero_subtitle: "Hayvanlarınız için uzman veterinerlik hizmetleri",
+    hero_cta: "Hizmetlerimizi Gör",
+    service_exam: "Muayene",
+    service_vaccine: "Aşı",
+    service_surgery: "Cerrahi",
+    service_dental: "Diş Bakımı",
+    service_lab: "Laboratuvar",
+    section_services_title: "Hizmetlerimiz",
+    section_team_title: "Ekibimiz",
+    contact_page_title: "İletişim",
+    contact_page_subtitle: "Bizimle iletişime geçmekten çekinmeyin.",
+    contact_name: "Adınız",
+    contact_email: "E-posta",
+    contact_message: "Mesajınız",
+    contact_submit: "Gönder"
+  },
+  en: {
+    menu_home: "Home",
+    menu_services: "Services",
+    menu_team: "Our Team",
+    menu_blog: "Blog",
+    menu_contact: "Contact",
+    hero_title: "Trusted Hands for Your Beloved Pets",
+    hero_subtitle: "Expert veterinary care for your animals",
+    hero_cta: "View Our Services",
+    service_exam: "Examination",
+    service_vaccine: "Vaccination",
+    service_surgery: "Surgery",
+    service_dental: "Dental Care",
+    service_lab: "Laboratory",
+    section_services_title: "Our Services",
+    section_team_title: "Our Team",
+    contact_page_title: "Contact",
+    contact_page_subtitle: "Feel free to reach out to us.",
+    contact_name: "Your Name",
+    contact_email: "Email",
+    contact_message: "Your Message",
+    contact_submit: "Send"
+  },
+  de: {
+    menu_home: "Startseite",
+    menu_services: "Dienstleistungen",
+    menu_team: "Unser Team",
+    menu_blog: "Blog",
+    menu_contact: "Kontakt",
+    hero_title: "Vertrauensvolle Hände für Ihre Lieblinge",
+    hero_subtitle: "Fachkundige tierärztliche Versorgung",
+    hero_cta: "Unsere Leistungen",
+    service_exam: "Untersuchung",
+    service_vaccine: "Impfung",
+    service_surgery: "Chirurgie",
+    service_dental: "Zahnpflege",
+    service_lab: "Labor",
+    section_services_title: "Unsere Leistungen",
+    section_team_title: "Unser Team",
+    contact_page_title: "Kontakt",
+    contact_page_subtitle: "Kontaktieren Sie uns gerne.",
+    contact_name: "Ihr Name",
+    contact_email: "E-Mail",
+    contact_message: "Ihre Nachricht",
+    contact_submit: "Senden"
+  },
+  ru: {
+    menu_home: "Главная",
+    menu_services: "Услуги",
+    menu_team: "Наша команда",
+    menu_blog: "Блог",
+    menu_contact: "Контакты",
+    hero_title: "Надежные руки для ваших питомцев",
+    hero_subtitle: "Профессиональный ветеринарный уход",
+    hero_cta: "Посмотреть услуги",
+    service_exam: "Осмотр",
+    service_vaccine: "Вакцинация",
+    service_surgery: "Хирургия",
+    service_dental: "Уход за зубами",
+    service_lab: "Лаборатория",
+    section_services_title: "Наши услуги",
+    section_team_title: "Наша команда",
+    contact_page_title: "Контакты",
+    contact_page_subtitle: "Свяжитесь с нами.",
+    contact_name: "Ваше имя",
+    contact_email: "Эл. почта",
+    contact_message: "Сообщение",
+    contact_submit: "Отправить"
+  }
+};
+
+function setLanguage(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    el.textContent = translations[lang][key] || key;
+  });
+}

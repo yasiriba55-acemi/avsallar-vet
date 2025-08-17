@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İletişim - Avsallar Veteriner Kliniği</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Avsallar Veteriner Kliniği</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-i18n="menu_home">Ana Sayfa</a></li>
+        <li><a href="services.html" data-i18n="menu_services">Hizmetler</a></li>
+        <li><a href="team.html" data-i18n="menu_team">Ekibimiz</a></li>
+        <li><a href="blog.html" data-i18n="menu_blog">Blog</a></li>
+        <li class="active"><a href="contact.html" data-i18n="menu_contact">İletişim</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switcher">
+      <button onclick="setLanguage('tr')">TR</button>
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('de')">DE</button>
+      <button onclick="setLanguage('ru')">RU</button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <h1 data-i18n="contact_page_title">İletişim</h1>
+    <p data-i18n="contact_page_subtitle">Bizimle iletişime geçmekten çekinmeyin.</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-form">
+      <form>
+        <label data-i18n="contact_name">Adınız</label>
+        <input type="text" required>
+        <label data-i18n="contact_email">E-posta</label>
+        <input type="email" required>
+        <label data-i18n="contact_message">Mesajınız</label>
+        <textarea required></textarea>
+        <button type="submit" class="btn primary" data-i18n="contact_submit">Gönder</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <p><strong data-i18n="contact_phone_label">Telefon:</strong> <a href="tel:1724">1724</a></p>
+      <p><strong data-i18n="contact_whatsapp_label">WhatsApp:</strong> <a href="https://wa.me/905xxxxxxxxx">+90 5xx xxx xx xx</a></p>
+      <p><strong data-i18n="contact_address_label">Adres:</strong> Avsallar, Alanya</p>
+      <iframe src="https://maps.google.com/maps?q=Avsallar%20Veteriner%20Klini%C4%9Fi&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0;"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Avsallar Veteriner Kliniği</p>
+    <div class="social">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube"></a>
+    </div>
+  </footer>
+</body>
+</html>

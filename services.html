@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hizmetler - Avsallar Veteriner Kliniği</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Avsallar Veteriner Kliniği</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-i18n="menu_home">Ana Sayfa</a></li>
+        <li class="dropdown active">
+          <a href="services.html" data-i18n="menu_services">Hizmetler</a>
+          <ul class="dropdown-menu">
+            <li data-i18n="service_exam">Muayene</li>
+            <li data-i18n="service_vaccine">Aşı</li>
+            <li data-i18n="service_surgery">Cerrahi</li>
+            <li data-i18n="service_dental">Diş Bakımı</li>
+            <li data-i18n="service_lab">Laboratuvar</li>
+          </ul>
+        </li>
+        <li><a href="team.html" data-i18n="menu_team">Ekibimiz</a></li>
+        <li><a href="blog.html" data-i18n="menu_blog">Blog</a></li>
+        <li><a href="contact.html" data-i18n="menu_contact">İletişim</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switcher">
+      <button onclick="setLanguage('tr')">TR</button>
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('de')">DE</button>
+      <button onclick="setLanguage('ru')">RU</button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <h1 data-i18n="services_page_title">Hizmetlerimiz</h1>
+    <p data-i18n="services_page_subtitle">
+      Evcil dostlarınıza en iyi bakımı sunmak için kapsamlı veterinerlik hizmetleri
+    </p>
+  </section>
+
+  <section class="services-list">
+    <div class="service-item">
+      <img src="https://images.unsplash.com/photo-1603415526960-f7e0328d2f82" alt="">
+      <div>
+        <h2 data-i18n="service_exam">Muayene</h2>
+        <p data-i18n="service_exam_desc">
+          Genel sağlık muayeneleri, düzenli kontrol ve hastalıkların erken teşhisi.
+        </p>
+      </div>
+    </div>
+    <div class="service-item">
+      <img src="https://images.unsplash.com/photo-1624571243601-5e7b3b44e0c6" alt="">
+      <div>
+        <h2 data-i18n="service_vaccine">Aşı</h2>
+        <p data-i18n="service_vaccine_desc">
+          Evcil hayvanlarınız için gerekli tüm aşılama hizmetleri.
+        </p>
+      </div>
+    </div>
+    <div class="service-item">
+      <img src="https://images.unsplash.com/photo-1625340915788-31c52f845ed9" alt="">
+      <div>
+        <h2 data-i18n="service_surgery">Cerrahi</h2>
+        <p data-i18n="service_surgery_desc">
+          Profesyonel cerrahi operasyonlar ve güvenli anestezi yönetimi.
+        </p>
+      </div>
+    </div>
+    <div class="service-item">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="">
+      <div>
+        <h2 data-i18n="service_dental">Diş Bakımı</h2>
+        <p data-i18n="service_dental_desc">
+          Diş temizliği ve ağız sağlığı kontrolleri.
+        </p>
+      </div>
+    </div>
+    <div class="service-item">
+      <img src="https://images.unsplash.com/photo-1625841091050-665fbf7b6e20" alt="">
+      <div>
+        <h2 data-i18n="service_lab">Laboratuvar</h2>
+        <p data-i18n="service_lab_desc">
+          Kan tahlili, röntgen ve biyokimya gibi laboratuvar hizmetleri.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Avsallar Veteriner Kliniği</p>
+    <div class="social">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube"></a>
+    </div>
+  </footer>
+</body>
+</html>

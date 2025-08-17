@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekibimiz - Avsallar Veteriner Kliniği</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Avsallar Veteriner Kliniği</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-i18n="menu_home">Ana Sayfa</a></li>
+        <li class="dropdown">
+          <a href="services.html" data-i18n="menu_services">Hizmetler</a>
+        </li>
+        <li class="active"><a href="team.html" data-i18n="menu_team">Ekibimiz</a></li>
+        <li><a href="blog.html" data-i18n="menu_blog">Blog</a></li>
+        <li><a href="contact.html" data-i18n="menu_contact">İletişim</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switcher">
+      <button onclick="setLanguage('tr')">TR</button>
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('de')">DE</button>
+      <button onclick="setLanguage('ru')">RU</button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <h1 data-i18n="team_page_title">Ekibimiz</h1>
+    <p data-i18n="team_page_subtitle">
+      Deneyimli veterinerlerimiz ve personelimiz ile tanışın.
+    </p>
+  </section>
+
+  <section class="team-slider">
+    <div class="slider">
+      <div class="slide">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+        <p>Dr. Ahmet Yılmaz</p>
+      </div>
+      <div class="slide">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+        <p>Dr. Ayşe Demir</p>
+      </div>
+      <div class="slide">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="">
+        <p>Dr. Mehmet Kaya</p>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Avsallar Veteriner Kliniği</p>
+    <div class="social">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube"></a>
+    </div>
+  </footer>
+</body>
+</html>
